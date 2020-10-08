@@ -15,7 +15,7 @@ const userInput = ( props ) => {
                 </div>
 
                 <div>
-                <p>{props.stringLength}</p>
+                <h3>{props.stringLength}</h3>
                 </div>
 
             </div>

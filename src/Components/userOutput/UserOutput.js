@@ -4,8 +4,8 @@ import React from 'react';
 const userOutput = ( props ) => {
     return (
         <div className="UserOutput">
-            <p>String: {props.username}</p>
-            <p>{props.children}</p>
+            <p>Two Way Binding String</p>
+            <p>{props.username}</p>
         </div>
     )
 };
