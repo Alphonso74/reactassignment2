@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
-import UserOutput from './Components/UserOutput';
-import UserInput from './Components/UserInput';
-import TitleToolBar from './Components/TitleToolBar'
+import UserOutput from './Components/userOutput/UserOutput';
+import UserInput from './Components/userInput/UserInput';
+import TitleToolBar from './Components/titleToolBar/TitleToolBar'
 
 class App extends Component {
   state = {

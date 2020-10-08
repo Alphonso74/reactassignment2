@@ -1,6 +1,5 @@
 import './UserInput.css';
 import React from 'react';
-import UserOutput from './UserOutput';
 
 const userInput = ( props ) => {
     return (
