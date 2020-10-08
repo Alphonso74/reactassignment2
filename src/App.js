@@ -34,7 +34,7 @@ class App extends Component {
 
           <TitleToolBar/>
 
-          <UserOutput username = {this.state.username}> Holy Cow Watch it GO! - Two Way Binding! </UserOutput>
+          <UserOutput username = {this.state.username}/>
 
           <UserInput change = {this.nameChangedHandler} currentName = {this.state.username}/>
 

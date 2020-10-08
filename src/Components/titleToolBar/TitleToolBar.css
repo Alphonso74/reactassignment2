@@ -3,15 +3,15 @@
     margin: 16px auto;
     padding: 16px;
     text-align: center;
-    background-color: aqua;
-    border: navy;
+    background-color: #a7aeb4;
+    border: #a7aeb4;
     cursor: pointer;
 
 
 }
 
 .TitleToolBar:hover {
-    background: #1a202c;
+    background: #ec1d20;
     color: #ffffff;
 }
 

@@ -3,12 +3,21 @@ import React from 'react';
 
 const userInput = ( props ) => {
     return (
-        <div className="UserInput" align="inline">
+        <div className="UserInput" >
+
             <div className="enterName">
-            <p>Enter a new Username</p>
+                <input type="text" onChange={props.change} value={props.currentName} />
             </div>
+
             <div className="textField">
-            <input type="text" onChange={props.change} value={props.currentName} />
+                <div>
+                <p>String Length: </p>
+                </div>
+
+                <div>
+                <p>{props.stringLength}</p>
+                </div>
+
             </div>
         </div>
     )
