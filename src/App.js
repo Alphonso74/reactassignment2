@@ -9,7 +9,7 @@ class App extends Component {
   state = {
 
        username: '',
-       length: 0
+       stringlength: null
 
 
   };
@@ -17,12 +17,13 @@ class App extends Component {
 
 
   nameChangedHandler = (event) => {
+
     this.setState( {
        username: event.target.value,
-        length: this.state.length + 1
+        stringlength: event.target.value.length
 
     } );
-      console.log(this.state.length)
+      // console.log(this.state.length)
   };
 
 
@@ -42,9 +43,9 @@ class App extends Component {
 
           <UserOutput username = {this.state.username}/>
 
-          <UserInput change = {this.nameChangedHandler} currentName = {this.state.username} stringLength = {this.state.length}/>
+          <UserInput change = {this.nameChangedHandler} currentName = {this.state.username} stringLength = {this.state.stringlength}/>
 
-          <ValidationComponent stringLength = {this.state.length} />
+          <ValidationComponent stringLength = {this.state.stringlength} />
 
           <button style={style} onClick={() => window.location.reload(false)}>Refresh Page</button>
         </div>
