@@ -4,6 +4,7 @@ import UserOutput from './Components/userOutput/UserOutput';
 import UserInput from './Components/userInput/UserInput';
 import TitleToolBar from './Components/titleToolBar/TitleToolBar';
 import ValidationComponent from './Components/validationComponent/ValidationComponent';
+import CharComponent from './Components/charComponents/CharComponents'
 
 class App extends Component {
   state = {
@@ -42,6 +43,8 @@ class App extends Component {
           <TitleToolBar/>
 
           <UserOutput username = {this.state.username}/>
+
+          <CharComponent/>
 
           <UserInput change = {this.nameChangedHandler} currentName = {this.state.username} stringLength = {this.state.stringlength}/>
 
