@@ -9,7 +9,7 @@ class App extends Component {
   state = {
 
        username: '',
-       stringlength: null
+       stringlength: 0
 
 
   };
