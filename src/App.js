@@ -34,7 +34,9 @@ class App extends Component {
     text.splice(index,1);
     const updatedText = text.join('');
 
-    this.setState({username: updatedText});
+    this.setState({
+        username: updatedText,
+        stringlength: updatedText.length});
 
   };
 
