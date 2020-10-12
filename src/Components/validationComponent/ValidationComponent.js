@@ -6,8 +6,6 @@ const validationComponent = ( props ) => {
 
     let stringLength = props.stringLength;
 
-    // console.log(stringLength, " efeef");
-
 
    let stringLengthConditional = (length) => {
 

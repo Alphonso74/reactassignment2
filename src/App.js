@@ -28,6 +28,16 @@ class App extends Component {
   };
 
 
+  deleteCharHandler = (index) => {
+
+    const text = this.state.username.split('');
+    text.splice(index,1);
+    const updatedText = text.join('');
+
+    this.setState({username: updatedText});
+
+  };
+
   render () {
     const style = {
       backgroundColor: ' light blue',
@@ -37,6 +47,11 @@ class App extends Component {
       cursor: 'pointer'
     };
 
+    const charList = this.state.username.split('').map( (char,index) => {
+
+        return <CharComponent character = {char} key={index} clicked = {() => this.deleteCharHandler(index)}/>
+    });
+
     return (
         <div className="App">
 
@@ -44,7 +59,7 @@ class App extends Component {
 
           <UserOutput username = {this.state.username}/>
 
-          <CharComponent/>
+            {charList}
 
           <UserInput change = {this.nameChangedHandler} currentName = {this.state.username} stringLength = {this.state.stringlength}/>
 
